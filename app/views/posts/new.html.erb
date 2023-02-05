@@ -1,0 +1,7 @@
+	
+<h1>新規投稿ページ</h1>
+<%= form_with url: "/posts", method: :post, local: true do |form| %>
+  <%= form.text_field :content %>
+  <%= form.password_field :pass %>
+  <%= form.submit '投稿する' %>
+<% end %>
